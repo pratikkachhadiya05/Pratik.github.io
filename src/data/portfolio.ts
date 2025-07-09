@@ -7,7 +7,7 @@ export const personalInfo = {
   phone: "+91 90163 65917",
   location: "Ahmedabad, Gujarat, India",
   bio: "Passionate full-stack developer with expertise in modern web technologies. I love creating innovative solutions that solve real-world problems and deliver exceptional user experiences.",
- avatar: 'https://pratikkachhadiya05.github.io/Pratik.github.io/profile.jpg',
+  avatar: '/Pratik.github.io/profile.jpg',
   resume: "/pratik-kachhdiya-resume.pdf",
   social: {
     github: "https://github.com/pratikkachhadiya05",
