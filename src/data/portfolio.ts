@@ -1,5 +1,6 @@
 import { Project, Education} from '../types';
 
+
 export const personalInfo = {
   name: "Pratik",
   title: "Full Stack Developer",
@@ -7,7 +8,7 @@ export const personalInfo = {
   phone: "+91 90163 65917",
   location: "Ahmedabad, Gujarat, India",
   bio: "Passionate full-stack developer with expertise in modern web technologies. I love creating innovative solutions that solve real-world problems and deliver exceptional user experiences.",
-  avatar: '/Pratik.github.io/profile.jpg',
+  avatar: `${import.meta.env.BASE_URL}profile.jpg`,
   resume: "/pratik-kachhdiya-resume.pdf",
   social: {
     github: "https://github.com/pratikkachhadiya05",
