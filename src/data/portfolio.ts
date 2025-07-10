@@ -4,7 +4,7 @@ import { Project, Education} from '../types';
 export const personalInfo = {
   name: "Pratik Kachhadiya",
   title: "Full Stack Developer",
-  email:" pratikkachhadiy77@gmail.com",
+  email:" pratikkachhadiya77@gmail.com",
   phone: "+91 90163 65917",
   location: "Ahmedabad, Gujarat, India",
   bio: "Passionate full-stack developer with expertise in modern web technologies. I love creating innovative solutions that solve real-world problems and deliver exceptional user experiences.",
