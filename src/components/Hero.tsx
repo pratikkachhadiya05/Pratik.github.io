@@ -92,7 +92,7 @@ const Hero: React.FC<HeroProps> = ({ portfolioData }) => {
               Get In Touch
             </button>
             <a
-              href="http://localhost:5000/api/resume"
+              href="https://github.com/pratikkachhadiya05/Pratik.github.io/blob/main/public/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
