@@ -1,5 +1,5 @@
 import React from 'react';
-import { personalInfo, skills } from '../data/portfolio';
+import { skills } from '../data/portfolio';
 import type { PortfolioData } from '../types';
 
 interface AboutProps {
@@ -7,7 +7,7 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = ({ portfolioData }) => {
-  const currentPersonalInfo = portfolioData?.personalInfo || personalInfo;
+  // const currentPersonalInfo = portfolioData?.personalInfo || personalInfo;
   const currentSkills = portfolioData?.skills || skills;
 
   return (
@@ -48,7 +48,7 @@ const About: React.FC<AboutProps> = ({ portfolioData }) => {
               
               <div className="mt-8">
                 <a
-                  href={currentPersonalInfo.resume}
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
                 >
                   Download Resume
