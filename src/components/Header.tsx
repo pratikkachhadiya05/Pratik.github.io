@@ -106,7 +106,7 @@ const Header: React.FC<HeaderProps> = ({ portfolioData }) => {
             >
               <Mail size={20} />
             </a>
-            <a
+            {/* <a
               href="https://github.com/pratikkachhadiya05/Pratik.github.io/blob/main/public/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -114,7 +114,7 @@ const Header: React.FC<HeaderProps> = ({ portfolioData }) => {
             >
               <FileText size={16} />
               <span>Resume</span>
-            </a>
+            </a> */}
           </div>
 
           <button
