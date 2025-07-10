@@ -30,10 +30,8 @@ const About: React.FC<AboutProps> = ({ portfolioData }) => {
                 Get to know me!
               </h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  I'm a passionate Full Stack Developer with over 5 years of experience 
-                  creating web applications that solve real-world problems. I love the 
-                  challenge of turning complex requirements into elegant, user-friendly solutions.
+                <p> 
+                  I'm a passionate Full Stack Developer. I love the challenge of turning complex requirements into elegant, user-friendly solutions.
                 </p>
                 <p>
                   My journey in tech started with a curiosity about how things work on the 
