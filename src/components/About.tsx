@@ -35,13 +35,12 @@ const About: React.FC<AboutProps> = ({ portfolioData }) => {
                 </p>
                 <p>
                   My journey in tech started with a curiosity about how things work on the 
-                  internet. Since then, I've worked with startups and established companies, 
-                  helping them build scalable applications that serve thousands of users.
+                  internet. Since then, I've worked in Hackathon. Helping Junior to build scalable applications.
                 </p>
                 <p>
                   When I'm not coding, you can find me exploring new technologies, 
                   contributing to open-source projects, or sharing knowledge through 
-                  technical writing and mentoring junior developers.
+                  technical writing.
                 </p>
               </div>
               
