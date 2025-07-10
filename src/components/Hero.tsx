@@ -91,14 +91,14 @@ const Hero: React.FC<HeroProps> = ({ portfolioData }) => {
             >
               Get In Touch
             </button>
-            <a
+            {/* <a
               href="{`${import.meta.env.BASE_URL}resume.pdf`}"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
             >
               Download Resume
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

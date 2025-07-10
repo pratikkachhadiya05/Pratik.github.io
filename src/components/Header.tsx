@@ -176,7 +176,7 @@ const Header: React.FC<HeaderProps> = ({ portfolioData }) => {
                 >
                   <Mail size={20} />
                 </a>
-                <a
+                {/* <a
                   href={`${import.meta.env.BASE_URL}resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -184,7 +184,7 @@ const Header: React.FC<HeaderProps> = ({ portfolioData }) => {
                 >
                   <FileText size={14} />
                   <span>Resume</span>
-                </a>
+                </a> */}
               </div>
             </nav>
           </div>
