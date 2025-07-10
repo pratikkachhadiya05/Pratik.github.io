@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin,Send } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
+import { createClient } from '@supabase/supabase-js'
 
 interface SocialLinks {
   github: string;
@@ -32,23 +33,26 @@ const Contact: React.FC<ContactProps> = ({ portfolioData }) => {
 
   const currentPersonalInfo = portfolioData?.personalInfo || personalInfo;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    fetch('http://localhost:5000/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: formData.name, email: formData.email, message: formData.message }),
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (data.success) alert('Message sent!');
-        else alert('Failed to send message.');
-      });
-    alert('Thank you for your message! I\'ll get back to you soon.');
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+const { name, email, message } = formData;
+const supabaseUrl = 'https://zlrnvctdzximdyuuxrri.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpscm52Y3RkenhpbWR5dXV4cnJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxMzgxODgsImV4cCI6MjA2NzcxNDE4OH0.hfj476q75NaPY4Bh7K29NCciaOv5qP2ne7Ib-4Nw_oQ';
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+  const { error } = await supabase
+    .from('messages')
+    .insert([{ name, email, message }]);
+
+  if (error) {
+    console.error('Supabase insert error:', error);
+    alert('❌ Failed to send message. Try again later.');
+  } else {
+    alert('✅ Message sent successfully!');
     setFormData({ name: '', email: '', message: '' });
-  };
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
