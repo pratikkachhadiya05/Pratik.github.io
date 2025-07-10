@@ -9,7 +9,7 @@ export const personalInfo = {
   location: "Ahmedabad, Gujarat, India",
   bio: "Passionate full-stack developer with expertise in modern web technologies. I love creating innovative solutions that solve real-world problems and deliver exceptional user experiences.",
   avatar: `${import.meta.env.BASE_URL}profile.jpg`,
-  resume: "/pratik-kachhdiya-resume.pdf",
+  resume: "https://pratikkachhadiya05/Pratik.github.io/resume.pdf",
   social: {
     github: "https://github.com/pratikkachhadiya05",
     linkedin: "https://www.linkedin.com/in/pratik-kachhadiya-7a60ba374/",

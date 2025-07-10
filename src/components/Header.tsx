@@ -177,7 +177,7 @@ const Header: React.FC<HeaderProps> = ({ portfolioData }) => {
                   <Mail size={20} />
                 </a>
                 <a
-                  href="https://github.com/pratikkachhadiya05/Pratik.github.io/blob/main/public/resume.pdf"
+                  href="https://pratikkachhadiya05/Pratik.github.io/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-lg transition-colors flex items-center space-x-2"
