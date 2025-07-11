@@ -2,7 +2,7 @@ import { Project, Education} from '../types';
 
 
 export const personalInfo = {
-  name: "Pratik Patel",
+  name: "Pratik Kachhadiya",
   title: "Full Stack Developer",
   email:" pratikkachhadiya77@gmail.com",
   phone: "+91 90163 65917",
